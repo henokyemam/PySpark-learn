@@ -1,0 +1,8 @@
+name: "Dev Pipeline"
+
+concurrency: ml-workflow-${{ github.ref }}
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
